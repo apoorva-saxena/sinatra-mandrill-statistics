@@ -1,0 +1,16 @@
+
+<h1>Mandril Email Stats</h1>
+
+<h2>Overview</h2>
+<p>total number of emails sent: <%= @overview_map['sent'] %></p>
+<p>total number of emails opened: <%= @overview_map['opened'] %></p>
+<p>total number of clicks: <%= @overview_map['clicked'] %>
+
+<h2> Stats per email type </h2>
+<% @stats_map.each do |email_type, frequency| %>
+<h4> Email type <%= email_type %> </h4>
+<p>open rate: <%= (@open_map[email_type]*100)/frequency %></p>
+<br>
+<p>click rate: <%= (@click_map[email_type]*100)/frequency %></p>
+<br>
+<% end %>
