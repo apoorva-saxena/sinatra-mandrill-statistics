@@ -6,10 +6,6 @@ require 'json'
 
 class MandrillStatistics < Sinatra::Base
 
-  # curl --data "Address=barney@lostmy.name&EmailType=Shipment&Event=send&Timestamp=1432820696" localhost:4567/email_data
-    # curl --data "Address=barney@lostmy.name&EmailType=Shipment&Event=click&Timestamp=1432820696" localhost:4567/email_data
-    # curl --data "Address=barney@lostmy.name&EmailType=Shipment&Event=open&Timestamp=1432820696" localhost:4567/email_data
-
   post '/email_data' do
     body = request.body.read
     data = JSON.parse(body)
