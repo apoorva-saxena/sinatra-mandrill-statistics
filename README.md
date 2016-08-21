@@ -1,6 +1,7 @@
 # Sinatra Mandrill Statistics
 
-About the app: An application that reads data from a file `llirdnam.go` and posts stats accordingly
+####About the app:
+An application that reads data from a file `llirdnam.go` and posts stats accordingly
 A few things that it shows currently are:
 - total number of emails sent
 - total number of emails opened
