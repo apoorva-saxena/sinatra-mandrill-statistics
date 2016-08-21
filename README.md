@@ -28,8 +28,8 @@ Rspec for unit testing and Capybara for the headless testing.
 - Run `bundle install` to install all the required gems
 - Migrate the database `rake db:Migrate`
 - Start the server with `ruby app.rb`
-- Start the llirdnam app by running http://localhost:4567/emails
-- Go to http://localhost:4567
+- Start the llirdnam app by giving http://localhost:4567/email_data as the argument to the go binary
+- Go to http://localhost:4567 to see the stats.
 
 #### Running the test suite
 - Run `rspec` to see the test suite
